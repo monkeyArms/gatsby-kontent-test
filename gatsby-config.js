@@ -5,6 +5,30 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+	/* Your site config here */
+	plugins: [
+		/**
+		 * gatsby-plugin-sass
+		 *
+		 * @see https://www.gatsbyjs.org/docs/sass/
+		 */
+		'gatsby-plugin-sass',
+		/**
+		 * gatsby-source-kontent
+		 *
+		 * for config options:
+		 * @see https://github.com/Kentico/kontent-gatsby-packages/tree/master/packages/gatsby-source-kontent#readme
+		 * @see https://www.gatsbyjs.org/packages/@kentico/gatsby-source-kontent/#examples-of-usage
+		 */
+		{
+			resolve: `@kentico/gatsby-source-kontent`,
+			options: {
+				projectId:         `04d0736e-2df0-0078-c8f1-1f5335f3bedf`,
+				languageCodenames: [
+					'default',
+				],
+
+			},
+		},
+	],
 }

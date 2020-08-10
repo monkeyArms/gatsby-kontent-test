@@ -1,0 +1,53 @@
+
+body {
+	font-family: sans-serif;
+	color: #333;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+}
+
+#site-header {
+	background: #ddd;
+	padding: 1rem;
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		li {
+			a {
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+
+main {
+	padding: 1rem;
+	max-width: 50rem;
+	margin: 0 auto;
+}
+
+#site-footer {
+	background: #ddd;
+	padding: 1rem;
+	text-align: center;
+}
+
+.product-list {
+
+	li {
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			max-width: 300px;
+		}
+	}
+}
