@@ -39,7 +39,7 @@ const Home = () =>
         }
       }
     }
-  ` );
+  	` );
 	const body = data.allKontentItemArticleExampleContentType.nodes[0].elements.body.value
 
 	return (

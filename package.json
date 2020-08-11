@@ -1,7 +1,7 @@
 {
 	"name":            "gatsby-kontent-test",
 	"private":         true,
-	"description":     "A simplified bare-bones starter for Gatsby",
+	"description":     "a quick gatsby.js + kontent test project",
 	"version":         "0.1.0",
 	"license":         "0BSD",
 	"scripts":         {
@@ -29,7 +29,7 @@
 	},
 	"repository":      {
 		"type": "git",
-		"url":  ""
+		"url":  "https://github.com/monkeyArms/gatsby-kontent-test"
 	},
 	"bugs":            {
 		"url": "https://github.com/gatsbyjs/gatsby/issues"

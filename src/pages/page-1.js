@@ -60,8 +60,8 @@ const Page1 = () =>
 				<div dangerouslySetInnerHTML={{ __html: body }} />
 				<h2>Products</h2>
 				<ul className="product-list">
-					{products.map( product =>
-						<li>
+					{products.map( ( product, key ) =>
+						<li key={key}>
 							<div>
 								<img src={product.elements.image.value[0].url} alt="" />
 							</div>

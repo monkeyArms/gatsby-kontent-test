@@ -1,0 +1,34 @@
+// media queries
+
+@mixin small {
+	@media only screen {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media only screen and (min-width: #{$mediumMinWidth}) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media only screen and (min-width: #{$largeMinWidth}) {
+		@content;
+	}
+}
+
+// lists
+
+@mixin plainList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin flexList {
+	@include plainList;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
