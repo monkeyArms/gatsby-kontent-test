@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import '../../styles/styles.scss';
 import {Helmet} from 'react-helmet';
+import '../../styles/styles.scss';
 
 
 /**

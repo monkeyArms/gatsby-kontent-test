@@ -1,6 +1,7 @@
 # aaron
 .idea
 .private
+.secrets
 
 # Logs
 logs

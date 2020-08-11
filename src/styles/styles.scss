@@ -1,3 +1,32 @@
+// breakpoints
+
+$mediumMinWidth: 40em;
+$largeMinWidth: 64em;
+
+@mixin small {
+	@media only screen {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media only screen and (min-width: #{$mediumMinWidth}) {
+		@content;
+	}
+}
+
+@mixin large {
+	@media only screen and (min-width: #{$largeMinWidth}) {
+		@content;
+	}
+}
+
+@mixin plainList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 
 body {
 	font-family: sans-serif;
@@ -8,14 +37,16 @@ body {
 	padding: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 #site-header {
 	background: #ddd;
 	padding: 1rem;
 
 	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
+		@include plainList;
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
@@ -41,13 +72,17 @@ main {
 }
 
 .product-list {
+	@include plainList;
 
 	li {
-		display: flex;
-		justify-content: space-between;
 
-		img {
-			max-width: 300px;
+		@include medium {
+			display: flex;
+			justify-content: space-between;
+
+			img {
+				max-width: 300px;
+			}
 		}
 	}
 }

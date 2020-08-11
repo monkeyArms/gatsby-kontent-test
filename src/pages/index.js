@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from '../components/ui/Layout';
 import {graphql, useStaticQuery} from 'gatsby';
-import {Helmet} from 'react-helmet'
 
 
 /**

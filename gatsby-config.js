@@ -17,7 +17,6 @@ module.exports = {
 		/**
 		 * gatsby-source-kontent
 		 *
-		 * for config options:
 		 * @see https://github.com/Kentico/kontent-gatsby-packages/tree/master/packages/gatsby-source-kontent#readme
 		 * @see https://www.gatsbyjs.org/packages/@kentico/gatsby-source-kontent/#examples-of-usage
 		 */
@@ -30,7 +29,7 @@ module.exports = {
 				],
 			},
 		},
-		
+
 		/**
 		 * gatsby-plugin-react-helmet
 		 *

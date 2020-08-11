@@ -1,0 +1,32 @@
+
+
+# BEGIN AFWD Custom Directives
+
+	# File Caching
+
+	#ExpiresActive On
+	#ExpiresDefault "access plus 4 months"
+	#AddType image/x-icon .ico
+	#AddType image/vnd.microsoft.icon .ico
+	#ExpiresByType image/x-icon "access plus 1 month"
+	#ExpiresByType image/vnd.microsoft.icon "access plus 1 month"
+
+
+	# GZIP Compression
+
+	<IfModule deflate_module>
+		AddOutputFilterByType DEFLATE text/css text/csv text/html text/plain text/richtext text/sgml text/tab-separated-values application/javascript application/x-javascript httpd/unix-directory
+		AddOutputFilter DEFLATE html htm shtml php php4 pl rb py cgi css js txt svg
+		BrowserMatch ^Mozilla/4 gzip-only-text/html
+		BrowserMatch ^Mozilla/4\.0[678] no-gzip
+		BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+	</IfModule>
+
+
+	# Force SSL
+
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+
+
+# END AFWD Custom Directives
