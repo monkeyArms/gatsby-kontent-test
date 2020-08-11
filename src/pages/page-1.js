@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/ui/Layout';
 import {graphql, useStaticQuery} from 'gatsby';
+import {Helmet} from 'react-helmet';
 
 
 /**
@@ -55,7 +56,7 @@ const Page1 = () =>
 
 	return (
 		<>
-			<Layout>
+			<Layout pageTitle="page 1">
 				<h1 dangerouslySetInnerHTML={{ __html: title }} />
 				<div dangerouslySetInnerHTML={{ __html: body }} />
 				<h2>Products</h2>

@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from '../components/ui/Layout';
 import {graphql, useStaticQuery} from 'gatsby';
+import {Helmet} from 'react-helmet'
 
 
 /**
@@ -44,7 +45,10 @@ const Home = () =>
 
 	return (
 		<>
-			<Layout>
+			<Layout
+				pageTitle="gatsby-kontent-test"
+				pageDescription="Quick gatsby.js + kontent test project"
+			>
 				<h1>Home</h1>
 				<div dangerouslySetInnerHTML={{ __html: body }} />
 			</Layout>

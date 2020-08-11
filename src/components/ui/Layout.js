@@ -1,20 +1,31 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import '../../styles/styles.scss';
+import {Helmet} from 'react-helmet';
 
 
 /**
  *
  * @param children
+ * @param pageTitle
+ * @param pageDescription
  * @returns {JSX.Element}
  * @constructor
  */
-const Layout = ( { children } ) =>
+const Layout = ( { children, pageTitle, pageDescription } ) =>
 {
 	const date = new Date().getFullYear();
 
+
 	return (
 		<div>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>{pageTitle}</title>
+				{pageDescription &&
+				<meta name="description" content={pageDescription} />
+				}
+			</Helmet>
 			<header id="site-header">
 				<ul>
 					<li>

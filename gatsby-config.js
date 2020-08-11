@@ -13,6 +13,7 @@ module.exports = {
 		 * @see https://www.gatsbyjs.org/docs/sass/
 		 */
 		'gatsby-plugin-sass',
+
 		/**
 		 * gatsby-source-kontent
 		 *
@@ -27,8 +28,27 @@ module.exports = {
 				languageCodenames: [
 					'default',
 				],
-
 			},
 		},
+		
+		/**
+		 * gatsby-plugin-react-helmet
+		 *
+		 * @see https://www.gatsbyjs.org/docs/add-page-metadata/
+		 */
+		'gatsby-plugin-react-helmet',
+
+		/**
+		 * gatsby-plugin-html-attributes
+		 *
+		 * @see https://www.gatsbyjs.org/packages/gatsby-plugin-html-attributes/
+		 */
+		{
+			resolve: 'gatsby-plugin-html-attributes',
+			options: {
+				lang: 'en'
+			}
+		}
+
 	],
 }
